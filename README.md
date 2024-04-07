@@ -5,7 +5,7 @@ This is a fork of ["Theorem Proving in Lean 4"](https://github.com/leanprover/th
 by Jeremy Avigad, Leonardo de Moura, Soonho Kong and Sebastian Ullrich, with contributions from the Lean
 Community.
 
-Note that *none* of the changes I made to the original text was endorsed by the original authors.
+Note that *none* of the changes I made only to my fork was endorsed by the original authors.
 
 ### Major Changes in My Fork
 
