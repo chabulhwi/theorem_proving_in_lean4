@@ -13,7 +13,7 @@ Note that *none* of the changes I made to the original text was endorsed by the 
     Author: Bulhwi Cha <chabulhwi@semmalgil.com>
     Date:   Sun Apr 7 20:04:34 2024 +0900
 
-doc: add cautionary note for constructivists
+    doc: add cautionary note for constructivists
 
 This note may help constructivists thinking of using Lean to save time.
 
@@ -21,7 +21,7 @@ This note may help constructivists thinking of using Lean to save time.
     Author: Bulhwi Cha <chabulhwi@semmalgil.com>
     Date:   Sun Apr 7 13:35:15 2024 +0900
 
-doc: clarify how Lean supports constructive logic
+    doc: clarify how Lean supports constructive logic
 
 The paragraph I added explains how Lean core [supports constructive
 logic][classical-tactics], whether the Lean core team will provide
