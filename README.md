@@ -9,11 +9,11 @@ Note that *none* of the changes I made to the original text was endorsed by the 
 
 ### Major Changes in My Fork
 
-    doc: add cautionary note for constructivists
+doc: add cautionary note for constructivists
 
 This note may help constructivists thinking of using Lean to save time.
 
-    doc: clarify how Lean supports constructive logic
+doc: clarify how Lean supports constructive logic
 
 The paragraph I added explains how Lean core [supports constructive
 logic][classical-tactics], whether the Lean core team will provide
