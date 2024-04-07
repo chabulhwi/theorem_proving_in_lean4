@@ -9,9 +9,13 @@ Note that *none* of the changes I made to the original text was endorsed by the 
 
 ### Major Changes in My Fork
 
+#### [50104743](https://git.sr.ht/~chabulhwi/theorem_proving_in_lean4/commit/50104743de63ed2f0554ab63ae0792ae46b5b189) — [Bulhwi Cha](https://git.sr.ht/~chabulhwi/)
+
 doc: add cautionary note for constructivists
 
 This note may help constructivists thinking of using Lean to save time.
+
+#### [c0028094](https://git.sr.ht/~chabulhwi/theorem_proving_in_lean4/commit/c002809407f9e82870a72d18886ec36dbffc893c) — [Bulhwi Cha](https://git.sr.ht/~chabulhwi/)
 
 doc: clarify how Lean supports constructive logic
 
