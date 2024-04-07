@@ -13,26 +13,26 @@ commit 50104743de63ed2f0554ab63ae0792ae46b5b189
 Author: Bulhwi Cha <chabulhwi@semmalgil.com>
 Date:   Sun Apr 7 20:04:34 2024 +0900
 
-    doc: add cautionary note for constructivists
+doc: add cautionary note for constructivists
 
-    This note may help constructivists thinking of using Lean to save time.
+This note may help constructivists thinking of using Lean to save time.
 
 commit c002809407f9e82870a72d18886ec36dbffc893c
 Author: Bulhwi Cha <chabulhwi@semmalgil.com>
 Date:   Sun Apr 7 13:35:15 2024 +0900
 
-    doc: clarify how Lean supports constructive logic
+doc: clarify how Lean supports constructive logic
 
-    The paragraph I added explains how Lean core [supports constructive
-    logic][classical-tactics], whether the Lean core team will provide
-    tactics for constructive logic or [accept them from
-    contributors][not-priority], and whether a user can [develop them by
-    oneself][not-stopping] [outside the core][possible].
+The paragraph I added explains how Lean core [supports constructive
+logic][classical-tactics], whether the Lean core team will provide
+tactics for constructive logic or [accept them from
+contributors][not-priority], and whether a user can [develop them by
+oneself][not-stopping] [outside the core][possible].
 
-    [classical-tactics]: https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/Movement.20from.20Std.20to.20Init/near/430339840
-    [not-priority]: https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/How.20classical.20is.20std4.3F/near/383780177
-    [not-stopping]: https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431685357
-    [possible]: https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431714863
+[classical-tactics]: https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/Movement.20from.20Std.20to.20Init/near/430339840
+[not-priority]: https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/How.20classical.20is.20std4.3F/near/383780177
+[not-stopping]: https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431685357
+[possible]: https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431714863
 
     Co-authored-by: Mario Carneiro <di.gama@gmail.com>
     Co-authored-by: Henrik Böving <hargonix@gmail.com>
