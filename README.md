@@ -32,7 +32,7 @@ oneself][not-stopping] [outside the core][possible].
 
     Co-authored-by: Mario Carneiro <di.gama@gmail.com>
     Co-authored-by: Henrik Böving <hargonix@gmail.com>
-    Co-authored-by: Scott Morrison <scott.morrison@gmail.com>
+    Co-authored-by: Kim Morrison <kim@tqft.net>
 
 ---
 
