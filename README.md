@@ -34,7 +34,7 @@ oneself][not-stopping] [outside the core][possible].
     Co-authored-by: Henrik Böving <hargonix@gmail.com>
     Co-authored-by: Scott Morrison <scott.morrison@gmail.com>
 
-### [eac8c460](https://git.sr.ht/~chabulhwi/theorem_proving_in_lean4/commit/eac8c460626a883dc4a69d2a2873c22cd81612e3) — [Bulhwi Cha](https://git.sr.ht/~chabulhwi/)
+### [6464a84d](https://git.sr.ht/~chabulhwi/theorem_proving_in_lean4/commit/6464a84d4e61b50b27534167cf373599a3b099e9) — [Bulhwi Cha](https://git.sr.ht/~chabulhwi/)
 
 doc: remove phrases that took a critical tone
 
