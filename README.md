@@ -1,11 +1,18 @@
 Theorem Proving in Lean 4
 -----------------------
 
-This is a fork of ["Theorem Proving in Lean 4"](https://github.com/leanprover/theorem_proving_in_lean4)
-by Jeremy Avigad, Leonardo de Moura, Soonho Kong and Sebastian Ullrich, with contributions from the Lean
-Community.
+This is the repository for my solutions to the exercises in ["Theorem Proving in Lean 4][tpil] by
+[Jeremy Avigad][ja], [Leonardo de Moura][ldm], [Soonho Kong][sk] and [Sebastian Ullrich][su], with
+contributions from [the Lean Community][lean-comm].
 
 Note that *none* of the changes I made only to my fork was endorsed by the original authors.
+
+[tpil]: https://lean-lang.org/theorem_proving_in_lean4/title_page.html
+[ja]: https://www.andrew.cmu.edu/user/avigad/
+[ldm]: https://leodemoura.github.io/about.html
+[sk]: https://soonhokong.github.io/
+[su]: https://sebasti.a.nullri.ch/
+[lean-comm]: https://leanprover-community.github.io/
 
 ## Major Changes in My Fork
 
