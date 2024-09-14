@@ -14,7 +14,7 @@ Note that *none* of the changes I made only to my fork was endorsed by the origi
 [su]: https://sebasti.a.nullri.ch/
 [lean-comm]: https://leanprover-community.github.io/
 
-## Major Changes in My Fork
+## Major changes in my fork
 
 ### [50104743](https://git.sr.ht/~chabulhwi/theorem_proving_in_lean4/commit/50104743de63ed2f0554ab63ae0792ae46b5b189) — [Bulhwi Cha](https://git.sr.ht/~chabulhwi/)
 
