@@ -1,9 +1,9 @@
 Theorem Proving in Lean 4
 -----------------------
 
-This is the repository for my solutions to the exercises in ["Theorem Proving in Lean 4"][tpil] by
-[Jeremy Avigad][ja], [Leonardo de Moura][ldm], [Soonho Kong][sk] and [Sebastian Ullrich][su], with
-contributions from the [Lean Community][lean-comm].
+This is my fork of ["Theorem Proving in Lean 4"][tpil] by [Jeremy Avigad][ja], [Leonardo de
+Moura][ldm], [Soonho Kong][sk] and [Sebastian Ullrich][su], with contributions from the [Lean
+Community][lean-comm].
 
 Note that *none* of the changes I made only to my fork was endorsed by the original authors.
 
