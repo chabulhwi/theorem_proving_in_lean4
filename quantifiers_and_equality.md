@@ -373,13 +373,11 @@ calc <expr>_0
 Here is an example:
 
 ```lean
-variable (a b c d e : Nat)
-variable (h1 : a = b)
-variable (h2 : b = c + 1)
-variable (h3 : c = d)
-variable (h4 : e = 1 + d)
-
-theorem T : a = e :=
+theorem T {a b c d e : Nat}
+    (h1 : a = b)
+    (h2 : b = c + 1)
+    (h3 : c = d)
+    (h4 : e = 1 + d) : a = e :=
   calc
     a = b      := h1
     _ = c + 1  := h2
@@ -395,12 +393,11 @@ the abbreviation ``rw`` for rewrite, the proof above could be written
 as follows:
 
 ```lean
-# variable (a b c d e : Nat)
-# variable (h1 : a = b)
-# variable (h2 : b = c + 1)
-# variable (h3 : c = d)
-# variable (h4 : e = 1 + d)
-theorem T : a = e :=
+theorem T {a b c d e : Nat}
+    (h1 : a = b)
+    (h2 : b = c + 1)
+    (h3 : c = d)
+    (h4 : e = 1 + d) : a = e :=
   calc
     a = b      := by rw [h1]
     _ = c + 1  := by rw [h2]
@@ -418,12 +415,11 @@ Rewrites can be applied sequentially, so that the proof above can be
 shortened to this:
 
 ```lean
-# variable (a b c d e : Nat)
-# variable (h1 : a = b)
-# variable (h2 : b = c + 1)
-# variable (h3 : c = d)
-# variable (h4 : e = 1 + d)
-theorem T : a = e :=
+theorem T {a b c d e : Nat}
+    (h1 : a = b)
+    (h2 : b = c + 1)
+    (h3 : c = d)
+    (h4 : e = 1 + d) : a = e :=
   calc
     a = d + 1  := by rw [h1, h2, h3]
     _ = 1 + d  := by rw [Nat.add_comm]
@@ -433,12 +429,11 @@ theorem T : a = e :=
 Or even this:
 
 ```lean
-# variable (a b c d e : Nat)
-# variable (h1 : a = b)
-# variable (h2 : b = c + 1)
-# variable (h3 : c = d)
-# variable (h4 : e = 1 + d)
-theorem T : a = e :=
+theorem T {a b c d e : Nat}
+    (h1 : a = b)
+    (h2 : b = c + 1)
+    (h3 : c = d)
+    (h4 : e = 1 + d) : a = e :=
   by rw [h1, h2, h3, Nat.add_comm, h4]
 ```
 
@@ -449,12 +444,11 @@ the system, and applies commutativity wisely to avoid looping. As a
 result, we can also prove the theorem as follows:
 
 ```lean
-# variable (a b c d e : Nat)
-# variable (h1 : a = b)
-# variable (h2 : b = c + 1)
-# variable (h3 : c = d)
-# variable (h4 : e = 1 + d)
-theorem T : a = e :=
+ttheorem T {a b c d e : Nat}
+    (h1 : a = b)
+    (h2 : b = c + 1)
+    (h3 : c = d)
+    (h4 : e = 1 + d) : a = e :=
   by simp [h1, h2, h3, Nat.add_comm, h4]
 ```
 
