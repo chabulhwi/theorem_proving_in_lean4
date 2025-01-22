@@ -16,51 +16,52 @@ Note that *none* of the changes I made only to my fork was endorsed by the origi
 
 ## Major changes in my fork
 
-### [50104743](https://git.sr.ht/~chabulhwi/theorem_proving_in_lean4/commit/50104743de63ed2f0554ab63ae0792ae46b5b189) — [Bulhwi Cha](https://git.sr.ht/~chabulhwi/)
+```diff
+diff --git a/introduction.md b/introduction.md
+index 7758fcc..812f092 100644
+--- a/introduction.md
++++ b/introduction.md
+@@ -61,6 +61,11 @@ To install Lean in your computer consider using the [Quickstart](https://github.
 
-doc: add cautionary note for constructivists
+ This tutorial describes the current version of Lean, known as Lean 4.
 
-This note may help constructivists thinking of using Lean to save time.
++You may want to reconsider your decision to learn Lean if you plan to use it for
++projects based on constructive logic. See the fourth paragraph of [Section
++Historical and Philosophical
++Context](./axioms_and_computation.md#historical-and-philosophical-context).
++
+ About this Book
+ ---------------
+```
 
-### [c0028094](https://git.sr.ht/~chabulhwi/theorem_proving_in_lean4/commit/c002809407f9e82870a72d18886ec36dbffc893c) — [Bulhwi Cha](https://git.sr.ht/~chabulhwi/)
+```diff
+diff --git a/axioms_and_computation.md b/axioms_and_computation.md
+index fa74e73..51654dd 100644
+--- a/axioms_and_computation.md
++++ b/axioms_and_computation.md
+@@ -95,10 +95,17 @@ computational interpretation. From a *classical* point of view, it is
+ more fruitful to maintain a separation of concerns: we can use one
+ language and body of methods to write computer programs, while
+ maintaining the freedom to use nonconstructive theories and methods
+-to reason about them. Lean is designed to support both of these
+-approaches. Core parts of the library are developed constructively,
+-but the system also provides support for carrying out classical
+-mathematical reasoning.
++to reason about them.
++
++Be aware that some tactics in Lean's core library use classical
++reasoning by default, even if a user has not opened the `Classical`
++namespace or used lemmas within it. Technically, it is still possible to
++build alternative tactics for constructive logic outside the core
++library and use them alongside the constructive tactics from the core.
++However, the developers of Lean's core library currently do not want to
++implement these tactics themselves, nor do they accept changes that
++attempt to modify the tactics in the core to avoid using classical
++reasoning.
 
-doc: clarify how Lean supports constructive logic
-
-The paragraph I added explains how Lean core [supports constructive
-logic][classical-tactics], whether the Lean core team will provide
-tactics for constructive logic or [accept them from
-contributors][not-priority], and whether a user can [develop them by
-oneself][not-stopping] [outside the core][possible].
-
-[classical-tactics]: https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/Movement.20from.20Std.20to.20Init/near/430339840
-[not-priority]: https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/How.20classical.20is.20std4.3F/near/383780177
-[not-stopping]: https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431685357
-[possible]: https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431714863
-
-    Co-authored-by: Mario Carneiro <di.gama@gmail.com>
-    Co-authored-by: Henrik Böving <hargonix@gmail.com>
-    Co-authored-by: Scott Morrison <scott.morrison@gmail.com>
-
-### [6464a84d](https://git.sr.ht/~chabulhwi/theorem_proving_in_lean4/commit/6464a84d4e61b50b27534167cf373599a3b099e9) — [Bulhwi Cha](https://git.sr.ht/~chabulhwi/)
-
-doc: remove phrases that took a critical tone
-
-> …, regardless of how simple the change may be.
-
-Jireh Loreaux said that the above phrasing ["seemed unnecessarily
-antagonistic."][0] I'd say it sounded 'highly critical' of the Lean core
-team but was also [pretty accurate][1].
-
-Nevertheless, Siddhartha Gadgil and others in the Lean community seemed
-to [agree with Jireh Loreaux][2]. So I decided to remove it and the word
-"any" in the part "nor do they accept any changes that…"
-
-[0]:
-https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431770413
-[1]:
-https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431789933
-[2]:
-https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/constructive.20tactic.20mode.20in.20lean/near/431787322
+ Computationally, the purest part of dependent type theory avoids the
+ use of ``Prop`` entirely. Inductive types and dependent function types
+```
 
 ---
 
