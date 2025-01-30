@@ -600,6 +600,8 @@ to ask Lean's pretty-printer to show the implicit arguments.
 variable (g : Nat → Nat → Nat)
 variable (hg : g 0 0 = 0)
 
+include hg
+
 theorem gex1 : ∃ x, g x x = x := ⟨0, hg⟩
 theorem gex2 : ∃ x, g x 0 = x := ⟨0, hg⟩
 theorem gex3 : ∃ x, g 0 0 = x := ⟨0, hg⟩
